@@ -6,6 +6,7 @@ const app = express()
 app.use(bodyParser.json())
 app.use(blogPosts)
 
+
 const port = process.env.PORT || 5000
 
 
