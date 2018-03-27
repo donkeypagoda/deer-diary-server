@@ -4,9 +4,9 @@ const knex = require('../knex')
 const router = express.Router()
 
 router.get("/blog_posts", (req, res) => {
-  knex('blog_posts').whereNot(null).then((posts) => {
-      console.log("hayo")
+  knex('blog_posts').then((posts) => {
       res.send(posts)
+      console.log("hayo")
     })
 })
 
