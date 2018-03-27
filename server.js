@@ -8,6 +8,10 @@ app.use(bodyParser.json())
 app.use(blogPosts)
 app.use(cors())
 
+// app.use((req, res) => {
+//   res.sendStatus(404);
+// });
+
 const port = process.env.PORT || 5000
 
 
