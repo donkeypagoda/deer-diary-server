@@ -4,8 +4,7 @@ const knex = require('knex')
 const router = express.Router()
 
 router.get("/blog_posts", (req, res) => {
-  knex("blog_posts")
-  .then((posts) => {
+  knex('blog_posts').select().then((posts) => {
       console.log("hayo")
       res.send(posts)
     })
