@@ -19,7 +19,7 @@ router.post("/blog_posts", (req, res) => {
                 content: req.body.content
               }
   knex('blog_posts')
-    .insert(post)
+    .insert(post, '*')
       .then(result => {
         console.log(result)
         res.send(result)
