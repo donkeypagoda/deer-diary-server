@@ -5,7 +5,6 @@ const router = express.Router()
 
 router.get("/blog_posts", (req, res) => {
   knex('blog_posts').then((posts) => {
-    console.log(req)
       res.send({posts})
       console.log(posts)
     })
