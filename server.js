@@ -4,8 +4,8 @@ const blogPosts = require('./routes/blogPosts')
 const cors = require('cors')
 
 const app = express()
-app.use(cors())
 app.use(bodyParser.json())
+app.use(cors())
 app.use(blogPosts)
 
 const port = process.env.PORT || 5000
