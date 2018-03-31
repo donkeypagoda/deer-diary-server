@@ -13,7 +13,6 @@ router.get("/blog_posts", (req, res) => {
 router.post("/blog_posts", (req, res) => {
   console.log(req.body)
   const post = {
-                timestamp: req.body.timestamp,
                 title: req.body.title,
                 content: req.body.content
               }
