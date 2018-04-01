@@ -24,4 +24,8 @@ router.post("/blog_posts", (req, res) => {
       })
 })
 
+router.delete("/blog_posts", (req, res) => {
+  console.log(req.body)
+})
+
 module.exports = router
