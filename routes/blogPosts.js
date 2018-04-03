@@ -26,6 +26,10 @@ router.post("/blog_posts", (req, res) => {
 
 router.delete("/blog_posts", (req, res) => {
   console.log(req.body)
+  const id = req.body.id
+  knex('blog_posts')
+  .where("id", id)
+  .del()
 })
 
 module.exports = router
