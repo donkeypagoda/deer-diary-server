@@ -25,11 +25,13 @@ router.post("/blog_posts", (req, res) => {
 })
 
 router.delete("/blog_posts", (req, res) => {
-  console.log(req.body)
+  console.log(req.body.id)
   const id = req.body.id
   knex('blog_posts')
-  .where("id", id)
-  .del()
+  .where('id', id)
+  .del().then(result =>{
+    res.send()
+  })
 })
 
 module.exports = router
