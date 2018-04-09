@@ -9,6 +9,15 @@ router.get("/blog_posts", (req, res) => {
     })
 })
 
+router.get("/blog_posts/:id", (req, res) => {
+  const id = req.params.id
+  knex('blog_posts')
+    .where('id', id)
+      .then((post) => {
+        res.send({post})
+    })
+})
+
 router.post("/blog_posts", (req, res) => {
   const post = {
                 title: req.body.title,
