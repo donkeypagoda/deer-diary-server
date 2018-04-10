@@ -14,6 +14,7 @@ router.get("/blog_posts/:id", (req, res) => {
   knex('blog_posts')
     .where('id', id)
       .then((post) => {
+        console.log(post)
         res.send({post})
     })
 })
