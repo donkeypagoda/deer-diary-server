@@ -23,6 +23,9 @@
     "type": "git",
     "url": "git+https://github.com/donkeypagoda/deer-diary-server.git"
   },
+  "engines": {
+  "node": "10.3.0"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
