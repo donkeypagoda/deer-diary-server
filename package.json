@@ -10,9 +10,9 @@
     "knex": "^0.14.4",
     "moment": "^2.21.0",
     "nodemon": "^1.17.3",
-    "npm": "^6.0.0",
+    "npm": "^6.11.3",
     "pg": "^7.4.1",
-    "sqlite3": "^4.0.0"
+    "sqlite3": "^4.1.0"
   },
   "devDependencies": {},
   "scripts": {
